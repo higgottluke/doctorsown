@@ -1,0 +1,23 @@
+.navbar {
+  box-shadow: none;
+}
+.gc {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.gc > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.footer-black .copyright a:not(.btn) {
+  color: #66615b;
+}
+footer .copyright .pull-right a + a:before {
+  content: '|';
+  padding-left: 8px;
+  padding-right: 8px;
+}

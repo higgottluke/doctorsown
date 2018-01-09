@@ -1,0 +1,20 @@
+{% load menu_tags %}
+
+<div class="col-md-3 col-sm-3 col-6">
+  <div class="links">
+    <ul class="uppercase-links stacked-links">
+    {% for child in children %}
+
+    <li><a href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}</a></li>
+      {% if forloop.counter|divisibleby:3 %}
+    </ul>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-3 col-6">
+    <div class="links">
+      <ul class="uppercase-links stacked-links">
+        {% endif %}
+        {% endfor %}
+    </ul>
+  </div>
+</div>
