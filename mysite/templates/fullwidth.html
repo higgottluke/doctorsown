@@ -8,7 +8,12 @@
 <div class="wrapper">
 	<div class="main">
 		<div class="section">
-		{% placeholder "content" %}
+		{% placeholder "content" or %}
+		<p class="lead"><strong>It looks like this page doesn't have any content yet.</strong></p>
+			{% if request.toolbar %}
+			<p>Switch into Structure mode to start adding content to the page.</p>
+			{% endif %}
+			{% endplaceholder %}
 		</div>
 	</div>
 </div>

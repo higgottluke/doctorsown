@@ -23,10 +23,21 @@
   <!-- doctorsown custom css -->
   <link href="{% static 'css/doctorsown.css' %}" rel="stylesheet">
 
+  {% if request.toolbar %}
+  <!-- django CMS toolbar adjustment -->
+  <style>
+      .cms-toolbar-expanded .navbar-custom {
+          margin-top: 45px;
+      }
+  </style>
+  {% endif %}
+
+</head>
+
 </head>
 <body>
   {% cms_toolbar %}
-  <nav class="navbar navbar-primary navbar-expand-md bg-primary" color-on-scroll="500">
+  <nav class="navbar navbar-primary navbar-expand-md bg-primary{% if not request.toolbar %} fixed-top{% endif %}" color-on-scroll="500">
     <div class="container">
       <div class="navbar-translate">
         <div class="navbar-header">
