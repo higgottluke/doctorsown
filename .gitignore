@@ -1,0 +1,9 @@
+*.pyc
+db.sqlite3
+env/
+*~
+__pycache__
+/static
+.DS_Store
+/env/
+mysite/settings.py
