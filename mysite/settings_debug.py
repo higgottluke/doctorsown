@@ -28,7 +28,7 @@ SECRET_KEY = '+^r&)qo*p6x#a7(s794r_6*gfy4y&hwizjfco=ie5m=&f6!8(j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['higgottluke.pythonanywhere.com']
 
 
 # Application definition
