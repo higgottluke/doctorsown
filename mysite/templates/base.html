@@ -37,7 +37,7 @@
 </head>
 <body>
   {% cms_toolbar %}
-  <nav class="navbar navbar-primary navbar-expand-md bg-primary{% if not request.toolbar %} fixed-top{% endif %}" color-on-scroll="500">
+  <nav class="navbar navbar-primary navbar-expand-md bg-primary{% if not request.toolbar.edit_mode %} fixed-top{% endif %}" color-on-scroll="500">
     <div class="container">
       <div class="navbar-translate">
         <div class="navbar-header">
